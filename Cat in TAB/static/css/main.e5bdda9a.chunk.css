@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f7fafc;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111318;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+    text-align: center;
+    -webkit-overflow-scrolling: touch;
+    height: 100vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable both-edges;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        -webkit-animation: App-logo-spin infinite 20s linear;
+                animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.groupScrollArea::-webkit-scrollbar {
+    opacity: 0;
+}
+
+.groupScrollAreaHover::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+    margin-top: 2px;
+}
+
+.groupScrollAreaHover::-webkit-scrollbar {
+    background-color: transparent;
+    width: 16px;
+}
+
+.groupScrollAreaHover::-webkit-scrollbar-thumb {
+    background-color: #e6e8eb;
+    opacity: 0.5;
+    border: 6px solid transparent;
+    background-clip: content-box;
+    border-radius: 10px;
+}
+
+.groupScrollAreaHover::-webkit-scrollbar-thumb:hover {
+    background-color: #c0c5cc;
+}
+
+.groupScrollAreaDark::-webkit-scrollbar {
+    opacity: 0;
+}
+
+.groupScrollAreaDarkHover::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+    margin-top: 2px;
+}
+
+.groupScrollAreaDarkHover::-webkit-scrollbar {
+    background-color: transparent;
+    width: 16px;
+}
+
+.groupScrollAreaDarkHover::-webkit-scrollbar-thumb {
+    background-color: #3c4146;
+    opacity: 0.5;
+    border: 6px solid transparent;
+    background-clip: content-box;
+    border-radius: 10px;
+}
+
+.groupScrollAreaDarkHover::-webkit-scrollbar-thumb:hover {
+    background-color: #50565e;
+}
+
+@-webkit-keyframes scaleDown {
+    from {
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+    }
+    to {
+        -webkit-transform: scale(0.96);
+                transform: scale(0.96);
+    }
+}
+
+@keyframes scaleDown {
+    from {
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+    }
+    to {
+        -webkit-transform: scale(0.96);
+                transform: scale(0.96);
+    }
+}
+
+.emoji-mart {
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.emoji-mart-dark {
+    border-radius: 12px;
+    color: #fff;
+    border-color: #262a2d;
+    background-color: #262a2d;
+    box-shadow: 2px 5px 28px 0 rgba(0, 0, 0, 0.7);
+}
+
+.emoji-mart-light {
+    border-radius: 12px;
+    box-shadow: 2px 5px 25px 0 rgba(152, 169, 185, 0.4);
+}
+
+.emoji-mart-dark .emoji-mart-category-label span {
+    background-color: #262a2d;
+    color: #fff;
+}
+
+.emoji-mart-dark .emoji-mart-skin-swatches {
+    border-color: #555453;
+    background-color: #262a2d;
+}
+
+.emoji-mart,
+.emoji-mart * {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.emoji-mart-dark .emoji-mart-search input {
+    background-color: #262a2d;
+}
+
+.text-area-focus:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 3px rgba(93, 171, 254, 0.8);
+}
+
+.signup::-webkit-input-placeholder {
+    color: #555d6c;
+    opacity: 1;
+}
+
+.signup:-ms-input-placeholder {
+    color: #555d6c;
+    opacity: 1;
+}
+
+.signup::-ms-input-placeholder {
+    color: #555d6c;
+    opacity: 1;
+}
+
+.signup::placeholder {
+    color: #555d6c;
+    opacity: 1;
+}
+.signupdark::-webkit-input-placeholder {
+    color: #a1a2a4;
+    opacity: 1;
+}
+.signupdark:-ms-input-placeholder {
+    color: #a1a2a4;
+    opacity: 1;
+}
+.signupdark::-ms-input-placeholder {
+    color: #a1a2a4;
+    opacity: 1;
+}
+.signupdark::placeholder {
+    color: #a1a2a4;
+    opacity: 1;
+}
+
+/* Longer Dashed border hack
+background: linear-gradient(to right, #09E901 80%, rgba(255, 255, 255, 0) 0%), linear-gradient(#09E901 80%, rgba(255, 255, 255, 0) 0%), linear-gradient(to right, #09E901 80%, rgba(255, 255, 255, 0) 0%), linear-gradient(#09E901 80%, rgba(255, 255, 255, 0) 0%);
+background-position: top, right, bottom, left;
+background-repeat: repeat-x, repeat-y;
+background-size: 10px 1px, 1px 10px; */
+
